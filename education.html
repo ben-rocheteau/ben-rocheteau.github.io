@@ -1,13 +1,16 @@
 ---
-layout: page
-title: Education
-description: "Education of Benjamin Rocheteau: PhD in Economics at Purdue, M.S. and B.S. at the Toulouse School of Economics."
+layout: null
+sitemap: false
 ---
-<section>
-  {% for d in site.data.education %}
-  <div class="edu-entry">
-    <p class="deg">{{ d.degree }} <span class="yr">· {{ d.note }}</span></p>
-    <p class="inst">{{ d.institution }}</p>
-  </div>
-  {% endfor %}
-</section>
+{%- comment -%} Old page, kept so existing links still work. {%- endcomment -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url={{ '/experience.html' | relative_url }}">
+<link rel="canonical" href="{{ '/experience.html' | relative_url }}">
+<meta name="robots" content="noindex">
+<title>Redirecting…</title>
+</head>
+<body><p>This page has moved: <a href="{{ '/experience.html' | relative_url }}">continue</a>.</p></body>
+</html>

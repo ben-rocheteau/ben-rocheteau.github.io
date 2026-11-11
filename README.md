@@ -15,7 +15,7 @@ A Jekyll site. GitHub Pages builds it automatically when you push, so there is n
 | Add a page to the nav bar | `_data/navigation.yml` (plus a new `.html` file) |
 | Colors, fonts, spacing | `assets/css/style.css` |
 
-Everything else (nav bar, footer, page layout) is shared and rarely needs touching.
+Everything else (nav bar, footer, page layout) is shared and rarely needs touching. The footer shows your contact details on every page, from `_includes/footer.html`.
 
 ## Adding a paper
 
@@ -35,7 +35,7 @@ Newest first within each status. When the paper is accepted, change `status` to 
 
 ## Adding a CV
 
-Put `cv.pdf` in the repo root and set `cv_file: /cv.pdf` in `_config.yml`. A CV link then appears on the home and Contact pages.
+Put `cv.pdf` in the repo root and set `cv_file: /cv.pdf` in `_config.yml`. A CV link then appears on the home page and in the footer.
 
 ## Splitting Teaching into its own page later
 

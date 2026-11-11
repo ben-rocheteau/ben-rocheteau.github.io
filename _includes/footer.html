@@ -1,0 +1,20 @@
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-id">
+        <p class="footer-name">{{ site.name }}</p>
+        <p>{{ site.role }}<br>{{ site.affiliation }}<br>{{ site.location }}</p>
+      </div>
+      <ul class="footer-links">
+        <li><span class="k">Email</span>{% include email.html %}</li>
+        <li><span class="k">LinkedIn</span><a href="{{ site.linkedin }}" target="_blank" rel="noopener">{{ site.linkedin | remove: "https://www." }}</a></li>
+        {% if site.cv_file != "" %}<li><span class="k">CV</span><a href="{{ site.cv_file | relative_url }}">Download (PDF)</a></li>{% endif %}
+        {% if site.google_scholar != "" %}<li><span class="k">Scholar</span><a href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar profile</a></li>{% endif %}
+        {% if site.ssrn != "" %}<li><span class="k">SSRN</span><a href="{{ site.ssrn }}" target="_blank" rel="noopener">Author page</a></li>{% endif %}
+        {% if site.orcid != "" %}<li><span class="k">ORCID</span><a href="{{ site.orcid }}" target="_blank" rel="noopener">{{ site.orcid | remove: "https://" }}</a></li>{% endif %}
+        {% if site.github != "" %}<li><span class="k">GitHub</span><a href="{{ site.github }}" target="_blank" rel="noopener">{{ site.github | remove: "https://" }}</a></li>{% endif %}
+      </ul>
+    </div>
+    <p class="copy">&copy; {{ 'now' | date: '%Y' }} {{ site.name }}</p>
+  </div>
+</footer>

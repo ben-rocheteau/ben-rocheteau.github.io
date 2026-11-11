@@ -1,0 +1,16 @@
+---
+layout: page
+title: Research
+description: Research interests, working papers, and publications of Benjamin Rocheteau.
+---
+<section>
+  <h2 class="section-title">Interests</h2>
+  <p class="lede">My research focuses on banking and behavioral economics: how financial institutions and the people within them make decisions under risk and uncertainty, and where standard rational-agent models fall short. I'm particularly drawn to questions that can be studied with both causal-inference methods and modern machine learning tools.</p>
+  <div class="interest-tags">
+    {% for topic in site.interests %}<span>{{ topic }}</span>{% endfor %}
+  </div>
+</section>
+
+{% include papers.html status="working_paper" heading="Working papers" empty="No working papers posted yet. This page will be updated as projects develop." %}
+{% include papers.html status="published" heading="Publications" empty="No publications yet." %}
+{% include papers.html status="work_in_progress" heading="Work in progress" empty="Projects in early stages will be listed here." %}

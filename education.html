@@ -1,0 +1,13 @@
+---
+layout: page
+title: Education
+description: Education of Benjamin Rocheteau: PhD in Economics at Purdue, M.S. and B.S. at the Toulouse School of Economics.
+---
+<section>
+  {% for d in site.data.education %}
+  <div class="edu-entry">
+    <p class="deg">{{ d.degree }} <span class="yr">· {{ d.note }}</span></p>
+    <p class="inst">{{ d.institution }}</p>
+  </div>
+  {% endfor %}
+</section>

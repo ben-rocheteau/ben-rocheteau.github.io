@@ -1,0 +1,37 @@
+---
+layout: page
+title: Experience
+description: Professional, teaching, and technical experience of Benjamin Rocheteau.
+---
+{% assign groups = "professional,teaching" | split: "," %}
+{% for group in groups %}
+{% assign entries = site.data.experience | where: "category", group %}
+<section>
+  <h2 class="section-title">{{ group | capitalize }}</h2>
+  {% for e in entries %}
+  <div class="entry">
+    <div class="when">{{ e.dates }}</div>
+    <div>
+      <p class="role">{{ e.role }}</p>
+      <p class="org">{{ e.org }}</p>
+      <ul>
+        {% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}
+      </ul>
+      {% if e.stack %}<p class="stack">{{ e.stack }}</p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endfor %}
+
+<section>
+  <h2 class="section-title">Skills</h2>
+  <div class="skill-groups">
+    {% for s in site.data.skills %}
+    <div class="skill-group">
+      <h3>{{ s.group }}</h3>
+      <p>{{ s.items }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>

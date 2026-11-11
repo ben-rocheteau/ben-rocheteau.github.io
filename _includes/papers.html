@@ -1,0 +1,28 @@
+{% assign items = site.data.papers | where: "status", include.status %}
+<section>
+  <h2 class="section-title">{{ include.heading }}</h2>
+  {% if items.size > 0 %}
+    {% for p in items %}
+    <div class="entry">
+      <div class="when">{{ p.year }}</div>
+      <div>
+        <p class="role">{{ p.title }}</p>
+        {% if p.coauthors or p.venue %}
+        <p class="org">{% if p.coauthors %}with {{ p.coauthors }}{% endif %}{% if p.coauthors and p.venue %} · {% endif %}{{ p.venue }}</p>
+        {% endif %}
+        {% if p.abstract %}<p class="abstract">{{ p.abstract }}</p>{% endif %}
+        {% if p.pdf or p.ssrn or p.slides or p.code %}
+        <p class="stack">
+          {% if p.pdf %}<a href="{{ p.pdf | relative_url }}">PDF</a>{% endif %}
+          {% if p.ssrn %}<a href="{{ p.ssrn }}" target="_blank" rel="noopener">SSRN</a>{% endif %}
+          {% if p.slides %}<a href="{{ p.slides | relative_url }}">Slides</a>{% endif %}
+          {% if p.code %}<a href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <div class="empty"><p>{{ include.empty }}</p></div>
+  {% endif %}
+</section>

@@ -1,7 +1,7 @@
 # Experience entries, shown newest first within each category as listed here.
 # category: professional | teaching
 # To add a job or a TA role, copy an entry to the top of its category.
-# "stack" is optional.
+# "bullets" and "stack" are optional.
 
 - category: professional
   dates: 07/2024 – 12/2024
@@ -32,6 +32,26 @@
     - Migrated team code from a shared drive to GitHub and AWS EC2, writing SOPs and hosting training sessions on the new workflow.
     - Wrote project documentation, function vignettes, and dependency charts to streamline onboarding for future hires.
   stack: GAM · Random Forest · XGBoost · R · AWS EC2 · GitHub · ETL
+
+- category: teaching
+  dates: Fall 2026
+  role: Teaching Assistant, ECON 451 Game Theory
+  org: Purdue Daniels School of Business, USA
+
+- category: teaching
+  dates: Fall 2025 – Fall 2026
+  role: Teaching Assistant, ECON 471 Behavioral Economics
+  org: Purdue Daniels School of Business, USA
+
+- category: teaching
+  dates: Spring 2026
+  role: Teaching Assistant, ECON 251 Microeconomics
+  org: Purdue Daniels School of Business, USA
+
+- category: teaching
+  dates: Fall 2025
+  role: Teaching Assistant, ECON 210 Principles of Economics
+  org: Purdue Daniels School of Business, USA
 
 - category: teaching
   dates: 09/2023 – 12/2023

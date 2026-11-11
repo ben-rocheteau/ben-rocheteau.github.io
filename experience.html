@@ -14,9 +14,11 @@ description: Professional, teaching, and technical experience of Benjamin Rochet
     <div>
       <p class="role">{{ e.role }}</p>
       <p class="org">{{ e.org }}</p>
+      {% if e.bullets %}
       <ul>
         {% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}
       </ul>
+      {% endif %}
       {% if e.stack %}<p class="stack">{{ e.stack }}</p>{% endif %}
     </div>
   </div>

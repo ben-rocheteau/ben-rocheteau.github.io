@@ -1,0 +1,8 @@
+- group: Causal inference and econometrics
+  items: Regression, fixed effects, panel data, time series, GAM
+
+- group: Machine learning
+  items: Random Forest, XGBoost, functional data analysis, dimensionality reduction
+
+- group: Tools and languages
+  items: R, Python, AWS EC2, GitHub, LaTeX, Google Colab

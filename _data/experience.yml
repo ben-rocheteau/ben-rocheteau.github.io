@@ -1,0 +1,48 @@
+# Experience entries, shown newest first within each category as listed here.
+# category: professional | teaching
+# To add a job or a TA role, copy an entry to the top of its category.
+# "stack" is optional.
+
+- category: professional
+  dates: 07/2024 – 12/2024
+  role: Data Science Intern
+  org: Banque de France — Analytic Modeling Team, France
+  bullets:
+    - Developed a forecasting model of bank response to short-term interest rate shocks, comparing econometric methods (linear regression, fixed effects) against machine learning models (XGBoost, Random Forest) across four accuracy metrics to inform policymakers about financial stability.
+    - Collected and cleaned thousands of data points via API-based web scraping in R, feeding a forecasting and projections pipeline.
+    - Summarized methods and results into reports and presentations for technical and non-technical stakeholders.
+  stack: Causal Inference · Random Forest · XGBoost · R · Python · LaTeX
+
+- category: professional
+  dates: 09/2023 – 03/2024
+  role: Statistical Consultant
+  org: GeoSys — Data Science Team, France
+  bullets:
+    - Built a crop-identification model to demonstrate functional data analysis techniques, combining a vegetation index derived from spectral band data with growing-degree-day time transforms to raise model accuracy by over 20%.
+    - Designed a big-data workflow, using iterators and spline-based dimensionality reduction, to train models on a dataset over 10x the size of available RAM.
+    - Implemented a stratification-optimization algorithm to size sampling strata by class and feature variance, addressing severe class imbalance.
+  stack: XGBoost · Panel Data · Functional Data Analysis · Python
+
+- category: professional
+  dates: 06/2023 – 08/2023
+  role: Analytics Intern
+  org: Moody's Analytics — Predictive Analytics Team, Czech Republic
+  bullets:
+    - Updated the team's modeling dataset for an annual refresh via ETL, aggregating internal sources and scraping and validating external data.
+    - Migrated team code from a shared drive to GitHub and AWS EC2, writing SOPs and hosting training sessions on the new workflow.
+    - Wrote project documentation, function vignettes, and dependency charts to streamline onboarding for future hires.
+  stack: GAM · Random Forest · XGBoost · R · AWS EC2 · GitHub · ETL
+
+- category: teaching
+  dates: 09/2023 – 12/2023
+  role: Teaching Assistant, Macroeconomics 3
+  org: Toulouse School of Economics, France
+  bullets:
+    - Led weekly sessions on AD-AS, IS-LM, and Mundell-Fleming, presenting problem set solutions and grading student exams.
+
+- category: teaching
+  dates: 06/2020 – 08/2020
+  role: Teaching Assistant, History of the Fed
+  org: University of California, Irvine, USA
+  bullets:
+    - Wrote lecture and reading summaries and created weekly revision quizzes on the Federal Reserve System.

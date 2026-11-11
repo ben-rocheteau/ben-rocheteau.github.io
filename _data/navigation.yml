@@ -1,0 +1,13 @@
+# Top navigation. Order here is the order on the page.
+# To add a page (for example Teaching): create teaching.html with front matter,
+# then add one entry below.
+- title: About
+  url: /
+- title: Research
+  url: /research.html
+- title: Experience
+  url: /experience.html
+- title: Education
+  url: /education.html
+- title: Contact
+  url: /contact.html

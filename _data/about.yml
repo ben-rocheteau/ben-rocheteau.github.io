@@ -1,0 +1,20 @@
+# The About section on the home page.
+# "text" is Markdown: separate paragraphs with a blank line.
+# "facts" is the small table beside it.
+
+text: |
+  I am a PhD student in Economics at the Purdue Daniels School of Business, where my research sits at the intersection of banking and behavioral economics. I'm interested in how institutions and individuals respond to financial risk, and in bringing empirical rigor, both econometric and computational, to those questions.
+
+  Before starting the PhD, I completed an M.S. in Data Science and a B.S. in Economics and Mathematics at the Toulouse School of Economics. Along the way I worked on applied modeling projects at Banque de France, Moody's Analytics, and GeoSys, and taught macroeconomics and monetary history as a teaching assistant. That work gave me a foundation in causal inference, machine learning, and large-scale data pipelines that now informs how I approach research questions in banking and behavior.
+
+facts:
+  - label: Institution
+    value: Purdue Daniels School of Business
+  - label: Program
+    value: PhD, Economics
+  - label: Fields
+    value: Banking, Behavioral Econ.
+  - label: Prior degree
+    value: M.S. Data Science, TSE
+  - label: Languages
+    value: French, English

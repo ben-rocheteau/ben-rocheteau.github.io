@@ -1,0 +1,22 @@
+# Your research. One entry per paper; the Research page sorts them into sections by status.
+#
+# status: one of
+#   working_paper     -> "Working papers"
+#   work_in_progress  -> "Work in progress"
+#   published         -> "Publications"
+#
+# To add a paper: delete the "[]" line below, then copy the example and fill it in.
+# To change a paper's stage later: change its status line. Nothing else.
+# Only title and status are required. Leave out any other field and it won't show.
+#
+# - title: Short Paper Title
+#   status: working_paper
+#   year: 2026
+#   coauthors: Coauthor One, Coauthor Two      # leave out if solo
+#   venue: Journal Name                        # for published papers
+#   abstract: Two or three sentences on the question and the finding.
+#   pdf: /papers/short-paper-title.pdf         # put the file in the papers/ folder
+#   ssrn: https://papers.ssrn.com/...
+#   slides: /papers/short-paper-title-slides.pdf
+#   code: https://github.com/...
+[]

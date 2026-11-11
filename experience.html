@@ -1,8 +1,21 @@
 ---
 layout: page
 title: Experience
-description: Professional, teaching, and technical experience of Benjamin Rocheteau.
+description: Education, professional and teaching experience, and skills of Benjamin Rocheteau.
 ---
+<section>
+  <h2 class="section-title">Education</h2>
+  {% for d in site.data.education %}
+  <div class="entry">
+    <div class="when">{{ d.note }}</div>
+    <div>
+      <p class="role">{{ d.degree }}</p>
+      <p class="org">{{ d.institution }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
 {% assign groups = "professional,teaching" | split: "," %}
 {% for group in groups %}
 {% assign entries = site.data.experience | where: "category", group %}

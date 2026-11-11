@@ -8,7 +8,7 @@ layout: default
     <h1 class="name">{{ site.name }}</h1>
     <p class="tagline">Studying <em>banking</em> and <em>behavioral economics</em> at the {{ site.affiliation }}, drawing on a background in causal inference and machine learning.</p>
     <div class="contact-row">
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {% include email.html %}
       <span class="sep">·</span>
       <a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
       {% if site.cv_file != "" %}<span class="sep">·</span><a href="{{ site.cv_file | relative_url }}">CV</a>{% endif %}

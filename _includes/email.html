@@ -1,0 +1,7 @@
+{%- comment -%}
+  Email link that reads normally for people but hides the plain address from
+  simple spam bots: "mailto:", "@" and "." are written as HTML character codes.
+  Change the address in _config.yml, not here.
+{%- endcomment -%}
+{%- assign enc = site.email | replace: "@", "&#64;" | replace: ".", "&#46;" -%}
+<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;{{ enc }}">{{ enc }}</a>

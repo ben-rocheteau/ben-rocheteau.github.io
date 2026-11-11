@@ -5,7 +5,7 @@ description: Contact Benjamin Rocheteau, PhD student in Economics at Purdue.
 ---
 <section>
   <ul class="contact-list">
-    <li><span class="k">Email</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    <li><span class="k">Email</span>{% include email.html %}</li>
     <li><span class="k">LinkedIn</span><a href="{{ site.linkedin }}" target="_blank" rel="noopener">{{ site.linkedin | remove: "https://www." }}</a></li>
     {% if site.cv_file != "" %}<li><span class="k">CV</span><a href="{{ site.cv_file | relative_url }}">Download (PDF)</a></li>{% endif %}
     {% if site.google_scholar != "" %}<li><span class="k">Scholar</span><a href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar profile</a></li>{% endif %}
